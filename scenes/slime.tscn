@@ -43,7 +43,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0l8pv"]
 size = Vector2(10, 11)
 
-[node name="Slime" type="Node2D" unique_id=472613785]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n6pvg"]
+size = Vector2(10, 12)
+
+[node name="Slime" type="CharacterBody2D" unique_id=806331171]
 script = ExtResource("1_n6pvg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2115778262]
@@ -65,3 +68,7 @@ target_position = Vector2(9, 0)
 [node name="RayCastLeft" type="RayCast2D" parent="." unique_id=1428700633]
 position = Vector2(1, 6)
 target_position = Vector2(-10, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2000399824]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_n6pvg")
