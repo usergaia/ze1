@@ -1,5 +1,9 @@
 extends Area2D
+
+@onready var game_manager: Node2D = %GameManager
+@onready var pickup_sound: AudioStreamPlayer2D = $PickupSound
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+
 func _on_body_entered(body: Node2D) -> void:
-	body.coins_collected += 1
-	print("Coins:", body.coins_collected)
-	queue_free()
+	game_manager.add_point()
+	animation_player.play("pickup")

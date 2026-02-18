@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b4i8qe216edjd" path="res://assets/sprites/player_sprite.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://gjujhw2ntfwu" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="AudioStream" uid="uid://dsntiw00oeybl" path="res://assets/sounds/jump.wav" id="3_qhqgy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_31cv2"]
 atlas = ExtResource("1_3vyb7")
@@ -325,3 +326,6 @@ frame_progress = 1.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=235198078]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_fjrip")
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=1051425688]
+stream = ExtResource("3_qhqgy")
