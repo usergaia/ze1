@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="game_prac"
+config/name="ze1"
 run/main_scene="uid://bjj4g5x4q7dfl"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"

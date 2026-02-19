@@ -512,7 +512,8 @@ theme_override_fonts/font = ExtResource("8_vtaks")
 theme_override_font_sizes/font_size = 8
 text = "Congrats! You collected all the coins!"
 
-[node name="Slimes" type="Node" parent="." unique_id=878528223]
+[node name="Slimes" type="Node2D" parent="." unique_id=609996851]
+z_index = 1
 
 [node name="Slime2" parent="Slimes" unique_id=601502859 instance=ExtResource("6_p57ef")]
 position = Vector2(-19, -76)
@@ -603,23 +604,23 @@ autoplay = &"MOVE"
 [node name="Labels" type="Node" parent="." unique_id=505527744]
 
 [node name="Label2" type="Label" parent="Labels" unique_id=1337134959]
-offset_left = -166.0
-offset_top = -174.0
-offset_right = 100.0
-offset_bottom = -132.0
+offset_left = -206.0
+offset_top = -172.0
+offset_right = 116.0
+offset_bottom = -130.0
 theme_override_fonts/font = ExtResource("7_0tnpc")
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 12
 text = "a/←, d/→ to movement
 Space to jump (x2 to double jump)"
 
 [node name="Label4" type="Label" parent="Labels" unique_id=934876540]
-offset_left = -166.0
-offset_top = -198.0
-offset_right = 106.0
-offset_bottom = -149.0
+offset_left = 162.0
+offset_top = -114.0
+offset_right = 434.0
+offset_bottom = -65.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("8_vtaks")
-theme_override_font_sizes/font_size = 13
+theme_override_font_sizes/font_size = 15
 text = "hello"
 
 [node name="Label" type="Label" parent="Labels" unique_id=2112254871]
@@ -641,13 +642,13 @@ theme_override_fonts/font = ExtResource("7_0tnpc")
 text = "well done"
 
 [node name="Label3" type="Label" parent="Labels" unique_id=365980086]
-offset_left = -100.0
-offset_top = -199.0
-offset_right = 172.0
-offset_bottom = -150.0
+offset_left = 236.0
+offset_top = -114.0
+offset_right = 508.0
+offset_bottom = -65.0
 theme_override_colors/font_color = Color(0.078431375, 0.20392157, 0.39215687, 1)
 theme_override_fonts/font = ExtResource("8_vtaks")
-theme_override_font_sizes/font_size = 13
+theme_override_font_sizes/font_size = 15
 text = "gdscript"
 
 [node name="Tile" type="Node" parent="." unique_id=275348072]
